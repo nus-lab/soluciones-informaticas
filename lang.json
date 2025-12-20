@@ -1,0 +1,27 @@
+{
+  "es": {
+    "nav_home": "Inicio",
+    "nav_about": "Nosotros",
+    "nav_services": "Servicios",
+    "nav_team": "Equipo",
+    "nav_portfolio": "Portafolio",
+    "nav_testimonials": "Testimonios",
+    "nav_contact": "Contacto",
+
+    "services_title": "Nuestros servicios",
+    "services_intro": "Creamos soluciones digitales que impulsan tu negocio."
+  },
+
+  "en": {
+    "nav_home": "Home",
+    "nav_about": "About us",
+    "nav_services": "Services",
+    "nav_team": "Team",
+    "nav_portfolio": "Portfolio",
+    "nav_testimonials": "Testimonials",
+    "nav_contact": "Contact",
+
+    "services_title": "Our services",
+    "services_intro": "We create digital solutions that drive your business."
+  }
+}
