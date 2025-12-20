@@ -84,13 +84,6 @@ VERSION : 1.1
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <!-- <li><a href="#home" class="page-scroll">Inicio</a></li>
-                        <li><a href="#about" class="page-scroll">Nosotros</a></li>
-                        <li><a href="#service" class="page-scroll">Servicios</a></li>
-                        <li><a href="#teams" class="page-scroll">Equipo</a></li>
-                        <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
-                        <li><a href="#testimonial-s" class="page-scroll">Testimonios</a></li>
-                        <li><a href="#contact" class="page-scroll">Contacto</a></li> -->
                         <li><a href="#home" data-key="nav_home">Inicio</a></li>
                         <li><a href="#about" data-key="nav_about">Nosotros</a></li>
                         <li><a href="#service" data-key="nav_services">Servicios</a></li>
@@ -126,17 +119,18 @@ VERSION : 1.1
                 <div class="container ">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 animate fadeInDown">
-                            <h1 class="text-capitalize">Bienvenido a
+                            <h1 class="text-capitalize">
+                                <span data-key="banner_title1">Bienvenido a</span>
                                 <span class="hero-brand">
-                                    <span class="brand-main-banner">SOLUCIONES INFORMÁTICAS NUS</span>
+                                    <span class="brand-main-banner" data-key="banner_title2">SOLUCIONES INFORMÁTICAS
+                                        NUS</span>
                                 </span>
                             </h1>
-
-                            <p class="lead"><strong>Somos una compañía que desarrolla sistemas web y soluciones
+                            <p class="lead" data-key="banner_subtitle1"><strong>Somos una compañía que desarrolla
+                                    sistemas web y soluciones
                                     digitales pensadas para tu negocio.</strong></p>
-                            <p class="lead second-lead"><strong>Tu éxito digital es nuestra prioridad.</strong></p>
-                            <!-- <button class="btn btn-primary" id="downloadbt">Download Now</button> -->
-
+                            <p class="lead second-lead" data-key="banner_subtitle2"><strong>Tu éxito digital es nuestra
+                                    prioridad.</strong></p>
                         </div>
                         <a href="#about" class="fa fa-angle-down page-scroll"></a>
                     </div>
@@ -150,13 +144,12 @@ VERSION : 1.1
 
         <!-- [ABOUT US]
  ============================================================================================================================-->
-        <section class="aboutus white-background black" id="about">
+        <!-- <section class="aboutus white-background black" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
                         <div class="aboutText">
                             <div class="sectionTitle fadeInDown">
-                                <!-- <h4>About us</h4> -->
                                 <h2>QUÍENES <strong> SOMOS</strong></h2>
                                 <hr>
                                 <div class="clearfix"></div>
@@ -195,7 +188,71 @@ VERSION : 1.1
                     </div>
                 </div>
             </div>
+        </section> -->
+
+        <section class="aboutus white-background black" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="aboutText">
+                            <div class="sectionTitle fadeInDown">
+                                <h2>
+                                    <span data-key="about_title1">QUIÉNES</span>
+                                    <strong data-key="about_title2"> SOMOS</strong>
+                                </h2>
+                                <hr>
+                                <div class="clearfix"></div>
+                            </div>
+
+                            <p class="intro" data-key="about_intro">
+                                Somos una empresa especializada en el desarrollo de sistemas
+                                personalizados para empresas que buscan automatizar sus procesos.
+                                Transformamos necesidades operativas en soluciones tecnológicas eficientes,
+                                seguras y escalables. Nuestro enfoque combina experiencia técnica con
+                                cercanía al cliente, para garantizar resultados que optimicen el tiempo,
+                                los recursos y la productividad.
+                            </p>
+
+                            <ul class="aboutList">
+                                <li>
+                                    <span class="fa fa-dot-circle-o"></span>
+                                    <strong data-key="about_mission_title">Misión</strong> -
+                                    <em data-key="about_mission_text">
+                                        Entregar soluciones tecnológicas únicas y de calidad,
+                                        ayudando a las empresas a automatizar sus procesos y crecer de manera
+                                        eficiente.
+                                    </em>
+                                </li>
+
+                                <li>
+                                    <span class="fa fa-dot-circle-o"></span>
+                                    <strong data-key="about_skills_title">Habilidades</strong> -
+                                    <em data-key="about_skills_text">
+                                        Desarrollo de sistemas a medida, integración de
+                                        procesos, optimización de flujos de trabajo y resultados rápidos con soporte
+                                        confiable.
+                                    </em>
+                                </li>
+
+                                <li>
+                                    <span class="fa fa-dot-circle-o"></span>
+                                    <strong data-key="about_clients_title">Clientes</strong> -
+                                    <em data-key="about_clients_text">
+                                        Empresas y profesionales satisfechos gracias a
+                                        nuestra experiencia, con proyectos exitosos en distintos sectores.
+                                    </em>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                        <img src="images/pc2.png" class="img-responsive" alt="pc" />
+                    </div>
+                </div>
+            </div>
         </section>
+
 
         <!-- [/ABOUTUS]
  ============================================================================================================================-->
@@ -229,29 +286,31 @@ VERSION : 1.1
 
                 <div class="col-md-3 col-sm-6 O-service">
                     <i class="fa fa-desktop themecolor "></i>
-                    <h4><strong>Desarrollo de Sistemas Web</strong></h4>
-                    <p>Creamos sistemas web a medida, adaptados a las necesidades de tu negocio. Soluciones seguras,
+                    <h4 data-key="service_web_title"><strong>Desarrollo de Sistemas Web</strong></h4>
+                    <p data-key="service_web_text">Creamos sistemas web a medida, adaptados a las necesidades de tu
+                        negocio. Soluciones seguras,
                         escalables y fáciles de usar para optimizar tus procesos.</p>
                 </div>
 
                 <div class="col-md-3 col-sm-6 O-service">
                     <i class="fa fa-cogs themecolor"></i>
-                    <h4><strong>Mantenimiento y Soporte</strong></h4>
-                    <p>Aseguramos el correcto funcionamiento de tu sistema.
+                    <h4 data-key="service_suport_title"><strong>Mantenimiento y Soporte</strong></h4>
+                    <p data-key="service_support_text">Aseguramos el correcto funcionamiento de tu sistema.
                         Brindamos soporte técnico, correcciones y monitoreo continuo.</p>
                 </div>
 
                 <div class="col-md-3 col-sm-6 O-service">
                     <i class="fa fa-refresh themecolor"></i>
-                    <h4><strong>Actualizaciones y Mejoras</strong></h4>
-                    <p>Mejoramos y ampliamos tu sistema conforme crece tu empresa.
+                    <h4 data-key="service_updates_title"><strong>Actualizaciones y Mejoras</strong></h4>
+                    <p data-key="service_updates_text">Mejoramos y ampliamos tu sistema conforme crece tu empresa.
                         Agregamos nuevas funciones y mantenemos la tecnología actualizada.</p>
                 </div>
 
                 <div class="col-md-3 col-sm-6 O-service">
                     <i class="fa fa-paint-brush themecolor"></i>
-                    <h4><strong>Diseño UX/UI</strong></h4>
-                    <p>Diseñamos interfaces modernas, intuitivas y enfocadas en la experiencia del usuario, mejorando la
+                    <h4 data-key="service_design_title"><strong>Diseño UX/UI</strong></h4>
+                    <p data-key="service_design_text">Diseñamos interfaces modernas, intuitivas y enfocadas en la
+                        experiencia del usuario, mejorando la
                         usabilidad y la imagen de tu sistema.</p>
                 </div>
 
@@ -269,7 +328,7 @@ VERSION : 1.1
             <div class="overlay">
                 <div class="container">
                     <div class="sectionTitle center">
-                        <h2><strong>Nuestro equipo</strong></h2>
+                        <h2 data-key="team_title"><strong>Nuestro equipo</strong></h2>
                         <div class="line">
                             <hr>
                         </div>
@@ -280,9 +339,10 @@ VERSION : 1.1
                             <div class="thumbnail">
                                 <img src="images/team/01N.jpg" alt="..." class="img-circle team-img">
                                 <div class="caption">
-                                    <h3>Niels Uchpa</h3>
-                                    <p>Gerente de Proyectos</p>
-                                    <p>Cuenta con experiencia en grandes compañías como P&G, Alusud Perú y Sinea,
+                                    <h3 data-key="team_name">Niels Uchpa</h3>
+                                    <p data-key="team_position">Gerente de Proyectos</p>
+                                    <p data-key="team_description">Cuenta con experiencia en grandes compañías como P&G,
+                                        Alusud Perú y Sinea,
                                         liderando proyectos de desarrollo e implementación de sistemas web
                                         personalizados con enfoque estratégico y orientación a resultados.
                                     </p>
@@ -295,9 +355,10 @@ VERSION : 1.1
                             <div class="thumbnail">
                                 <img src="images/team/02N.jpg" alt="..." class="img-circle team-img">
                                 <div class="caption">
-                                    <h3>Miguel Huarcaya</h3>
-                                    <p>Analista Programador</p>
-                                    <p>Encargado de analizar, desarrollar e integrar la información mediante el uso de
+                                    <h3 data-key="team_name2">Miguel Huarcaya</h3>
+                                    <p data-key="team_position2">Analista Programador</p>
+                                    <p data-key="team_description2">Encargado de analizar, desarrollar e integrar la
+                                        información mediante el uso de
                                         nuevas tecnologías que conforman un sistema, asegurando soluciones eficientes
                                         y alineadas a los objetivos estratégicos del proyecto.
                                     </p>
@@ -310,9 +371,10 @@ VERSION : 1.1
                             <div class="thumbnail">
                                 <img src="images/team/01N.jpg" alt="..." class="img-circle team-img">
                                 <div class="caption">
-                                    <h3>Niels Uchpa</h3>
-                                    <p>Gerente de Proyectos</p>
-                                    <p>Cuenta con experiencia en grandes compañías como P&G, Alusud Perú y Sinea,
+                                    <h3 data-key="team_name3">Niels Uchpa</h3>
+                                    <p data-key="team_position3">Gerente de Proyectos</p>
+                                    <p data-key="team_description3">Cuenta con experiencia en grandes compañías como
+                                        P&G, Alusud Perú y Sinea,
                                         liderando proyectos de desarrollo e implementación de sistemas web
                                         personalizados con enfoque estratégico y orientación a resultados.
                                     </p>
@@ -324,9 +386,10 @@ VERSION : 1.1
                             <div class="thumbnail">
                                 <img src="images/team/02N.jpg" alt="..." class="img-circle team-img">
                                 <div class="caption">
-                                    <h3>Miguel Huarcaya</h3>
-                                    <p>Analista Programador</p>
-                                    <p>Encargado de analizar, desarrollar e integrar la información mediante el uso de
+                                    <h3 data-key="team_name4">Miguel Huarcaya</h3>
+                                    <p data-key="team_position4">Analista Programador</p>
+                                    <p data-key="team_description4">Encargado de analizar, desarrollar e integrar la
+                                        información mediante el uso de
                                         nuevas tecnologías que conforman un sistema, asegurando soluciones eficientes
                                         y alineadas a los objetivos estratégicos del proyecto.
                                     </p>
@@ -334,19 +397,6 @@ VERSION : 1.1
                             </div>
                         </div>
 
-                        <div class="item">
-                            <div class="thumbnail">
-                                <img src="images/team/01N.jpg" alt="..." class="img-circle team-img">
-                                <div class="caption">
-                                    <h3>Niels Uchpa</h3>
-                                    <p>Gerente de Proyectos</p>
-                                    <p>Cuenta con experiencia en grandes compañías como P&G, Alusud Perú y Sinea,
-                                        liderando proyectos de desarrollo e implementación de sistemas web
-                                        personalizados con enfoque estratégico y orientación a resultados.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -364,12 +414,14 @@ VERSION : 1.1
             <div class="container">
                 <div class="row">
                     <div class="sectionTitle text-center  col-md-12">
-                        <h2><strong>Conoce algunos de nuestros proyectos realizados</strong></h2>
+                        <h2 data-key="portfolio_title"><strong>Conoce algunos de nuestros proyectos realizados</strong>
+                        </h2>
                         <div class="line grey_background_color">
 
                         </div>
                         <div class="clearfix"></div>
-                        <p class="intro">Presentamos una selección de sistemas web desarrollados para distintos
+                        <p class="intro" data-key="portfolio_intro">Presentamos una selección de sistemas web
+                            desarrollados para distintos
                             sectores.
                             Cada trabajo está enfocado en optimizar procesos, mejorar la experiencia del usuario y
                             generar resultados reales.</p>
@@ -380,15 +432,20 @@ VERSION : 1.1
 
                         <ul class="cat">
                             <li class="pull-left">
-                                <h4>Filtrar por tipo:</h4>
+                                <h4 data-key="portfolio_filter">Filtrar por tipo:</h4>
                             </li>
                             <li class="pull-right">
                                 <ol class="type">
-                                    <li><a href="#" data-filter="*" class="active">All</a></li>
-                                    <li><a href="#" data-filter=".web">Diseño y desarrollo</a></li>
-                                    <li><a href="#" data-filter=".photography">Soluciones digitales</a></li>
-                                    <li><a href="#" data-filter=".app">Branding y estrategia</a></li>
-                                    <li><a href="#" data-filter=".branding">Servicios técnicos</a></li>
+                                    <li><a href="#" data-filter="*" class="active"
+                                            data-key="portfolio_filter_all">All</a></li>
+                                    <li><a href="#" data-filter=".web" data-key="portfolio_filter_web">Diseño y
+                                            desarrollo</a></li>
+                                    <li><a href="#" data-filter=".photography"
+                                            data-key="portfolio_filter_digital">Soluciones digitales</a></li>
+                                    <li><a href="#" data-filter=".app" data-key="portfolio_filter_branding">Branding y
+                                            estrategia</a></li>
+                                    <li><a href="#" data-filter=".branding"
+                                            data-key="portfolio_filter_services">Servicios técnicos</a></li>
                                 </ol>
                             </li>
                         </ul>
@@ -404,8 +461,8 @@ VERSION : 1.1
                                         data-category="Diseño y desarrollo" data-image="images/portfolio/01.jpg">
 
                                         <div class="hover-text">
-                                            <h4>Diseño Web</h4>
-                                            <small>Diseño y desarrollo</small>
+                                            <h4 data-key="portfolio_item_web_design">Diseño Web</h4>
+                                            <small data-key="portfolio_category_web">Diseño y desarrollo</small>
                                             <div class="clearfix"></div>
                                             <i class="fa fa-plus"></i>
                                         </div>
@@ -422,8 +479,8 @@ VERSION : 1.1
                                         data-category="Soluciones digitales" data-image="images/portfolio/02.jpg">
 
                                         <div class="hover-text">
-                                            <h4>Sistemas Web</h4>
-                                            <small>Soluciones digitales</small>
+                                            <h4 data-key="portfolio_item_systems">Sistemas Web</h4>
+                                            <small data-key="portfolio_category_digital">Soluciones digitales</small>
                                             <div class="clearfix"></div>
                                             <i class="fa fa-plus"></i>
                                         </div>
@@ -440,8 +497,8 @@ VERSION : 1.1
                                         data-category="Branding y estrategia" data-image="images/portfolio/03.jpg">
 
                                         <div class="hover-text">
-                                            <h4>Estrategia digital</h4>
-                                            <small>Branding y estrategia</small>
+                                            <h4 data-key="portfolio_item_strategy">Estrategia digital</h4>
+                                            <small data-key="portfolio_category_branding">Branding y estrategia</small>
                                             <div class="clearfix"></div>
                                             <i class="fa fa-plus"></i>
                                         </div>
@@ -458,8 +515,8 @@ VERSION : 1.1
                                         data-category="Servicios técnicos" data-image="images/portfolio/04.jpg">
 
                                         <div class="hover-text">
-                                            <h4>Mantenimiento web</h4>
-                                            <small>Servicios técnicos</small>
+                                            <h4 data-key="portfolio_item_maintenance">Mantenimiento web</h4>
+                                            <small data-key="portfolio_category_services">Servicios técnicos</small>
                                             <div class="clearfix"></div>
                                             <i class="fa fa-plus"></i>
                                         </div>
@@ -477,8 +534,8 @@ VERSION : 1.1
                                         data-category="Diseño y desarrollo" data-image="images/portfolio/05.jpg">
 
                                         <div class="hover-text">
-                                            <h4>Desarrollo Frontend</h4>
-                                            <small>Diseño y desarrollo</small>
+                                            <h4 data-key="portfolio_item_frontend">Desarrollo Frontend</h4>
+                                            <small data-key="portfolio_category_web">Diseño y desarrollo</small>
                                             <div class="clearfix"></div>
                                             <i class="fa fa-plus"></i>
                                         </div>
@@ -495,8 +552,8 @@ VERSION : 1.1
                                         data-category="Soluciones digitales" data-image="images/portfolio/06.jpg">
 
                                         <div class="hover-text">
-                                            <h4>Automatización</h4>
-                                            <small>Soluciones digitales</small>
+                                            <h4 data-key="portfolio_item_automation">Automatización</h4>
+                                            <small data-key="portfolio_category_digital">Soluciones digitales</small>
                                             <div class="clearfix"></div>
                                             <i class="fa fa-plus"></i>
                                         </div>
@@ -513,8 +570,8 @@ VERSION : 1.1
                                         data-category="Branding y estrategia" data-image="images/portfolio/07.jpg">
 
                                         <div class="hover-text">
-                                            <h4>Manual de marca</h4>
-                                            <small>Branding y estrategia</small>
+                                            <h4 data-key="portfolio_item_manual">Manual de marca</h4>
+                                            <small data-key="portfolio_category_branding">Branding y estrategia</small>
                                             <div class="clearfix"></div>
                                             <i class="fa fa-plus"></i>
                                         </div>
@@ -532,8 +589,8 @@ VERSION : 1.1
                                     <a href="#" class="open-portfolio" data-title="Seguridad web"
                                         data-category="Servicios técnicos" data-image="images/portfolio/08.jpg">
                                         <div class="hover-text">
-                                            <h4>Seguridad web</h4>
-                                            <small>Servicios técnicos</small>
+                                            <h4 data-key="portfolio_item_security">Seguridad web</h4>
+                                            <small data-key="portfolio_category_services">Servicios técnicos</small>
                                             <div class="clearfix"></div>
                                             <i class="fa fa-plus"></i>
                                         </div>
@@ -562,7 +619,7 @@ VERSION : 1.1
                 <div class="container">
 
                     <div class="sectionTitle text-center">
-                        <h2><strong>Nuestros Clientes</strong></h2>
+                        <h2 data-key="client_title"><strong>Nuestros Clientes</strong></h2>
                         <div class="line">
                             <hr>
                         </div>
@@ -599,7 +656,7 @@ VERSION : 1.1
             <div class="container">
                 <div class="row">
                     <div class="sectionTitle text-center col-md-12">
-                        <h2><strong></strong>Testimonios de nuestros clientes</h2>
+                        <h2 data-key="testimonials_title"><strong>Testimonios de nuestros clientes</strong></h2>
                         <div class="line">
                             <hr>
                         </div>
@@ -608,29 +665,40 @@ VERSION : 1.1
                     <div class="col-md-8 col-md-offset-2 grey">
                         <div id="testimonial" class="owl-carousel owl-theme">
                             <div class="item">
-                                <h5>
+                                <h5 data-key="testimonial_text_1">
                                     Niels es un desarrollador con la tenacidad y la confianza para profundizar realmente
                                     en escenarios complicados y la fricción de colaboración que se necesita para
                                     producir un excelente trabajo.
                                 </h5>
-                                <p><strong>Juan Real</strong>, Jefe de Producción</p>
+                                <!-- <p><strong>Juan Real</strong>, Jefe de Producción</p> -->
+                                <p>
+                                    <strong data-key="testimonial_name_1">Juan Real</strong>,
+                                    <span data-key="testimonial_role_1">Jefe de Producción</span>
+                                </p>
                             </div>
 
                             <div class="item">
-                                <h5>
+                                <h5 data-key="testimonial_text_2">
                                     Con Niels cada proyecto se realiza de manera oportuna y se entrega
                                     exactamente como se describe. Su experiencia lo convierten en una parte invaluable
                                     de nuestro proceso.
                                 </h5>
-                                <p><strong>Jesus Gutarra</strong>, Jefe de Control de Calidad</p>
+                                <p>
+                                    <strong data-key="testimonial_name_2">Jesus Gutarra</strong>,
+                                    <span data-key="testimonial_role_2">Jefe de Control de Calidad</span>
+                                </p>
                             </div>
 
                             <div class="item">
-                                <h5>Necesitábamos una web que reflejara el estilo artístico de nuestra galería, y
+                                <h5 data-key="testimonial_text_3">
+                                    Necesitábamos una web que reflejara el estilo artístico de nuestra galería, y
                                     Soluciones Informáticas NUS lo logró con precisión. El diseño es limpio, visualmente
                                     impactante y fácil de navegar. Recibimos elogios constantes por la estética del
                                     sitio.</h5>
-                                <p><strong>Andrea Salazar</strong>, Directora de Arte en Galería Prisma</p>
+                                <p>
+                                    <strong data-key="testimonial_name_3">Andrea Salazar</strong>,
+                                    <span data-key="testimonial_role_3">Directora de Arte en Galería Prisma</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -654,41 +722,50 @@ VERSION : 1.1
                     <div class="col-md-8 col-md-offset-2">
 
                         <div class="sectionTitle text-center">
-                            <h2><strong>Trabajemos juntos</strong></h2>
-                            <p>Ponte en contacto con nosotros y llevemos tu proyecto al siguiente nivel.</p>
+                            <h2>
+                                <strong data-key="contact_title">Trabajemos juntos</strong>
+                            </h2>
+                            <p data-key="contact_intro">
+                                Ponte en contacto con nosotros y llevemos tu proyecto al siguiente nivel.
+                            </p>
                             <div class="line">
                                 <hr>
                             </div>
                             <div class="clearfix"></div>
-
                         </div>
 
                         <form id="contact-form">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputPassword1">Nombre</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Nombre">
+                                        <label data-key="contact_name_label" for="name">Nombre</label>
+                                        <input type="text" class="form-control" id="name"
+                                            data-placeholder="contact_name_placeholder" placeholder="Nombre">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Correo electrónico</label>
+                                        <label data-key="contact_email_label" for="email">Correo electrónico</label>
                                         <input type="email" class="form-control" id="email"
+                                            data-placeholder="contact_email_placeholder"
                                             placeholder="Correo electrónico">
                                     </div>
                                 </div>
-
                             </div>
+
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Mensaje</label>
-                                <textarea class="form-control" id="message" rows="3"></textarea>
+                                <label data-key="contact_message_label" for="message">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="3"
+                                    data-placeholder="contact_message_placeholder" placeholder="Mensaje"></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary black-background"
-                                id="contactbtn">Enviar</button>
+                            <button type="submit" class="btn btn-primary black-background" id="contactbtn"
+                                data-key="contact_button">
+                                Enviar
+                            </button>
                         </form>
+
                         <div id="success"></div>
 
                     </div>
@@ -696,6 +773,7 @@ VERSION : 1.1
 
             </div>
         </section>
+
 
         <!-- [/CONTACT]
  ============================================================================================================================-->
@@ -706,7 +784,7 @@ VERSION : 1.1
         <footer class="footer">
             <div class="container">
                 <div class="pull-left fnav">
-                    <p>© 2025 Soluciones Informáticas NUS</p>
+                    <p data-key="footer_copyright">© 2025 Soluciones Informáticas NUS</p>
                 </div>
                 <div class="pull-right fnav">
                     <ul class="footer-social">
@@ -881,10 +959,18 @@ VERSION : 1.1
             });
 
         function setLanguage(lang) {
+
             document.querySelectorAll("[data-key]").forEach(el => {
                 const key = el.dataset.key;
                 if (translations[lang][key]) {
                     el.textContent = translations[lang][key];
+                }
+            });
+
+            document.querySelectorAll("[data-placeholder]").forEach(el => {
+                const key = el.dataset.placeholder;
+                if (translations[lang][key]) {
+                    el.placeholder = translations[lang][key];
                 }
             });
 
