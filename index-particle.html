@@ -880,46 +880,9 @@ VERSION : 1.1
         </div>
     </div>
 
-    <!-- Lenguaje y traducción-->
-    <script>
-        let translations = {};
-        const defaultLang = "es";
+    <!-- Lenguaje cambio -->
+    <script src="js/lang.js"></script>
 
-        fetch("lang.json")
-            .then(res => res.json())
-            .then(data => {
-                translations = data;
-
-                const savedLang = localStorage.getItem("lang") || defaultLang;
-                setLanguage(savedLang);
-                document.getElementById("langSwitcher").value = savedLang;
-            });
-
-        function setLanguage(lang) {
-
-            document.querySelectorAll("[data-key]").forEach(el => {
-                const key = el.dataset.key;
-                if (translations[lang][key]) {
-                    el.textContent = translations[lang][key];
-                }
-            });
-
-            document.querySelectorAll("[data-placeholder]").forEach(el => {
-                const key = el.dataset.placeholder;
-                if (translations[lang][key]) {
-                    el.placeholder = translations[lang][key];
-                }
-            });
-
-            localStorage.setItem("lang", lang);
-        }
-
-        document.getElementById("langSwitcher").addEventListener("change", e => {
-            setLanguage(e.target.value);
-        });
-    </script>
-
-    
     <!-- Cerrie automatico del navbar -->
     <script>
         $(document).ready(function () {
