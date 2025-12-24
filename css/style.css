@@ -780,7 +780,7 @@ ul.aboutList li span {
 /*	PORTFOLIO
 ------------------------------*/
 
-.portfolio>.container {
+.portfolio > .container {
     padding-top: 100px;
 }
 
@@ -817,103 +817,121 @@ ol.type li a.active {
 
 .isotope,
 .isotope .isotope-item {
-    /* change duration value to whatever you like */
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
     transition-duration: 0.8s;
 }
 
 .isotope-item {
     margin-right: -1px;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
 .isotope {
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transition-property: height, width;
-    -moz-transition-property: height, width;
     transition-property: height, width;
 }
 
 .isotope .isotope-item {
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
     transition-property: transform, opacity;
 }
 
 .portfolio-item {
     margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-
 .portfolio-item .hover-bg {
     height: 260px;
     overflow: hidden;
     position: relative;
 }
 
+.portfolio-item img {
+    position: relative;
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.hover-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.55); 
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hover-bg:hover::before {
+    opacity: 1;
+}
+
+.hover-bg:hover img {
+    transform: scale(1.15);
+}
+
 .hover-bg .hover-text {
     position: absolute;
-    text-align: center;
-    margin: 0 auto;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.66);
-    padding: 25% 0;
-    height: 100%;
+    bottom: 0;
+    left: 0;
+
     width: 100%;
+    height: 50%;                
+
+    background: rgba(255, 255, 255, 0.95);
+    color: #222;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     opacity: 0;
-    transition: all 0.5s;
-}
-
-.hover-bg .hover-text>h4 {
-    opacity: 0;
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-    transition: all 0.3s;
-}
-
-.hover-bg:hover .hover-text>h4 {
-    opacity: 1;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-
-.hover-bg .hover-text>i {
-    opacity: 0;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    transition: all 0.3s;
-}
-
-.hover-bg:hover .hover-text>i {
-    opacity: 1;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
+    transition: opacity 0.4s ease;
+    z-index: 2;
 }
 
 .hover-bg:hover .hover-text {
     opacity: 1;
 }
 
-.categories {
-    padding: 10px 0;
+.hover-bg .hover-text h4 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 4px 0;
 }
 
-portfoio i.fa {
-    height: 30px;
-    width: 30px;
-    font-size: 20px;
-    padding: 5px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
+.hover-bg .hover-text small {
+    font-size: 13px;
+    color: #555;
+}
 
+.hover-bg .hover-text i.fa {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
+
+    border: 2px solid #000;
+    border-radius: 50%;
+
+    font-size: 20px;
+    line-height: 1;        
+    margin-bottom: 8px;
+
+    color: #000;
+}
+
+.categories {
+    margin-bottom: 15px; 
 }
 
 /*	OUR TEAM

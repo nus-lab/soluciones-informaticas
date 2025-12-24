@@ -43,7 +43,8 @@ async function detectLanguage() {
 
 document.addEventListener("DOMContentLoaded", async () => {
 
-    const res = await fetch("lang.json");
+    const res = await fetch("language/lang.json");
+
     translations = await res.json();
 
     const lang = await detectLanguage();
