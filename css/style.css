@@ -780,10 +780,11 @@ ul.aboutList li span {
 /*	PORTFOLIO
 ------------------------------*/
 
-.portfolio > .container {
+.portfolio>.container {
     padding-top: 100px;
 }
 
+/* ===== FILTROS ===== */
 ol.type li {
     display: inline-block;
     margin-left: 20px;
@@ -807,8 +808,11 @@ ol.type li a.active {
     font-weight: 700;
 }
 
+/* ===== ISOTOPE ===== */
 .isotope-item {
     z-index: 2;
+    margin-right: -1px;
+    backface-visibility: hidden;
 }
 
 .isotope-hidden.isotope-item {
@@ -818,20 +822,14 @@ ol.type li a.active {
 .isotope,
 .isotope .isotope-item {
     transition-duration: 0.8s;
-}
-
-.isotope-item {
-    margin-right: -1px;
     backface-visibility: hidden;
 }
 
 .isotope {
-    backface-visibility: hidden;
     transition-property: height, width;
 }
 
 .isotope .isotope-item {
-    backface-visibility: hidden;
     transition-property: transform, opacity;
 }
 
@@ -839,29 +837,28 @@ ol.type li a.active {
     margin-bottom: 30px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
+
 .portfolio-item .hover-bg {
     height: 260px;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
 .portfolio-item img {
-    position: relative;
-    z-index: 0;
-
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.6s ease;
 }
 
+/* Overlay hover */
 .hover-bg::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255,255,255,0.55); 
+    background: rgba(255, 255, 255, 0.55);
     opacity: 0;
     transition: opacity 0.4s ease;
     z-index: 1;
@@ -876,14 +873,14 @@ ol.type li a.active {
     transform: scale(1.15);
 }
 
+/* Texto hover */
 .hover-bg .hover-text {
     position: absolute;
     bottom: 0;
     left: 0;
 
     width: 100%;
-    height: 50%;                
-
+    height: 50%;
     background: rgba(255, 255, 255, 0.95);
     color: #222;
 
@@ -915,24 +912,134 @@ ol.type li a.active {
 .hover-bg .hover-text i.fa {
     width: 38px;
     height: 38px;
-
     display: flex;
-    align-items: center;    
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
 
     border: 2px solid #000;
     border-radius: 50%;
-
     font-size: 20px;
-    line-height: 1;        
     margin-bottom: 8px;
-
     color: #000;
 }
 
 .categories {
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
+
+/* ===== MODAL IMAGEN ===== */
+.modal-image-wrapper {
+    position: relative;
+}
+
+.modal-image-wrapper img {
+    width: 100%;
+    display: block;
+}
+
+/* Texto sobre la imagen */
+.modal-overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 16px 20px;
+
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.55));
+
+    color: #fff;
+    font-size: 15px;
+    text-align: left;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+
+    pointer-events: none;
+}
+
+
+.modal-overlay-text span {
+    white-space: pre-line;
+    word-break: break-word;
+    line-height: 1.5;
+}
+
+
+/* ===== MODAL PORTFOLIO ===== */
+
+#particles-js {
+    pointer-events: none;
+}
+
+#portfolioModal .modal-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+#portfolioModal .modal-header {
+    padding: 20px 25px;
+    border-bottom: 1px solid #25236c;
+}
+
+#portfolioModal .modal-header h4 {
+    color: #25236c;
+    font-weight: 1000;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+#portfolioModal .modal-header .close {
+    color: #3d6eea;
+    opacity: 0.7;
+    font-size: 26px;
+    margin-top: -20px;
+}
+
+#portfolioModal .modal-header .close:hover {
+    opacity: 1;
+    color: #25236c;
+}
+
+#portfolioModal .modal-body {
+    padding: 0;
+}
+
+/* Categoría debajo de la imagen */
+#portfolioModal #portfolioCategory {
+    margin-top: 12px;
+    color: #25236c;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+}
+
+/* Línea decorativa */
+#portfolioModal .modal-body::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #25236c;
+    margin: 15px auto 0;
+    border-radius: 3px;
+}
+
+/* Imagen final del modal (FIX ZOOM) */
+#portfolioModal img {
+    width: 100%;
+    max-height: 70vh;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
 
 /*	OUR TEAM
 ------------------------------*/
@@ -1228,69 +1335,6 @@ ul.footer-social li {
     background-color: rgba(255, 255, 255, 0.8);
     font-weight: 570;
     padding: 0px 8px;
-}
-
-/* ===== MODAL PORTFOLIO ===== */
-
-#particles-js {
-    pointer-events: none;
-}
-
-#portfolioModal .modal-content {
-    background-color: #ffffff;
-    color: #ffffff;
-    border-radius: 8px;
-}
-
-#portfolioModal .modal-header {
-    padding: 20px 25px;
-    border-bottom: 1px solid #25236c;
-}
-
-#portfolioModal .modal-header h4 {
-    color: #25236c;
-    font-weight: 1000;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-}
-
-#portfolioModal .modal-header .close {
-    color: #3d6eea;
-    opacity: 0.7;
-    font-size: 26px;
-    margin-top: -20px;
-}
-
-#portfolioModal .modal-header .close:hover {
-    opacity: 1;
-    color: #25236c;
-}
-
-#portfolioModal .modal-body {
-    background-color: #ffffff;
-}
-
-#portfolioModal img {
-    border-radius: 6px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-#portfolioModal #portfolioCategory {
-    margin-top: 12px;
-    color: #25236c;
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 0.6px;
-}
-
-#portfolioModal .modal-body::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #25236c;
-    margin: 15px auto 0;
-    border-radius: 3px;
 }
 
 /*Botone de Whatssap, etc*/
