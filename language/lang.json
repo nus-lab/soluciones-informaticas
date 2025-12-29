@@ -107,7 +107,9 @@
     "portfolio_overlay_05": "Automatización Industrial\nControla los objetivos de producción, así como identificar y resolver posibles problemas de capacidad en las diferentes etapas del proceso. Los datos de todas las etapas de fabricación son recopilados y mostrados en computadoras distribuidas por toda la planta.",
     "portfolio_overlay_06": "Sistemas Gestión de Capacitaciones\nEl sistema automatizado genera informes sobre el plan de aprendizaje de cada empleado, analiza el rendimiento y detecta posibles problemas que pueden afectar la eficacia de la formación. Permite ejecutar estrategias para desarrollar, motivar y mejorar la retención del aprendizaje de los colaboradores.",
     "portfolio_overlay_07": "Sistema Control de Indicadores\nControlar los objetivos de producción, así como identificar y resolver posibles problemas de capacidad en las diferentes etapas del proceso. Mejorar la productividad de la empresa, reduciendo los costos de producción y mejorando la calidad de los productos.",
-    "portfolio_overlay_08": "Gestión Orden de Trabajo\nAutomatiza el seguimiento y la programación de actividades de mantenimiento, permitiendo operar de forma proactiva, reducir el tiempo de inactividad y aumentar la eficiencia operativa. El sistema rastrea el historial y las tendencias de los equipos a través de recursos de prevención y análisis de fallas."
+    "portfolio_overlay_08": "Gestión Orden de Trabajo\nAutomatiza el seguimiento y la programación de actividades de mantenimiento, permitiendo operar de forma proactiva, reducir el tiempo de inactividad y aumentar la eficiencia operativa. El sistema rastrea el historial y las tendencias de los equipos a través de recursos de prevención y análisis de fallas.",
+    "brand_line_1": "SOLUCIONES",
+    "brand_line_2": "INFORMÁTICAS"
   },
   "en": {
     "nav_home": "Home",
@@ -217,7 +219,9 @@
     "portfolio_overlay_05": "Industrial Automation\nControls production targets and identifies and resolves potential capacity issues at different stages of the process. Data from all manufacturing stages is collected and displayed on computers distributed throughout the plant.",
     "portfolio_overlay_06": "Training Management Systems\nThe automated system generates reports on each employee’s learning plan, analyzes performance, and detects potential issues that may affect training effectiveness. It enables strategies to develop, motivate, and improve employee learning retention.",
     "portfolio_overlay_07": "Performance Indicator Control System\nControls production targets and identifies and resolves potential capacity issues at different stages of the process. Improves company productivity by reducing production costs and enhancing product quality.",
-    "portfolio_overlay_08": "Work Order Management\nAutomates the tracking and scheduling of maintenance activities, enabling proactive operations, reducing downtime, and increasing operational efficiency. The system tracks equipment history and trends through prevention resources and failure analysis."
+    "portfolio_overlay_08": "Work Order Management\nAutomates the tracking and scheduling of maintenance activities, enabling proactive operations, reducing downtime, and increasing operational efficiency. The system tracks equipment history and trends through prevention resources and failure analysis.",
+    "brand_line_1": "IT",
+    "brand_line_2": "SOLUTIONS"
   },
   "it": {
     "nav_home": "Home",
@@ -327,6 +331,8 @@
     "portfolio_overlay_05": "Automazione industriale\nControlla gli obiettivi di produzione e identifica e risolve potenziali problemi di capacità nelle diverse fasi del processo. I dati di tutte le fasi di produzione vengono raccolti e visualizzati su computer distribuiti in tutto lo stabilimento.",
     "portfolio_overlay_06": "Sistemi di gestione della formazione\nIl sistema automatizzato genera report sul piano di apprendimento di ciascun dipendente, analizza le prestazioni e rileva potenziali problemi che possono influire sull’efficacia della formazione. Consente di attuare strategie per sviluppare, motivare e migliorare la retention dell’apprendimento dei collaboratori.",
     "portfolio_overlay_07": "Sistema di controllo degli indicatori\nControlla gli obiettivi di produzione e identifica e risolve potenziali problemi di capacità nelle diverse fasi del processo. Migliora la produttività aziendale riducendo i costi di produzione e aumentando la qualità dei prodotti.",
-    "portfolio_overlay_08": "Gestione degli ordini di lavoro\nAutomatizza il monitoraggio e la pianificazione delle attività di manutenzione, consentendo un funzionamento proattivo, riducendo i tempi di inattività e aumentando l’efficienza operativa. Il sistema traccia la cronologia e le tendenze delle apparecchiature attraverso risorse di prevenzione e analisi dei guasti."
+    "portfolio_overlay_08": "Gestione degli ordini di lavoro\nAutomatizza il monitoraggio e la pianificazione delle attività di manutenzione, consentendo un funzionamento proattivo, riducendo i tempi di inattività e aumentando l’efficienza operativa. Il sistema traccia la cronologia e le tendenze delle apparecchiature attraverso risorse di prevenzione e analisi dei guasti.",
+    "brand_line_1": "SOLUZIONI",
+    "brand_line_2": "INFORMATICHE"
   }
 }

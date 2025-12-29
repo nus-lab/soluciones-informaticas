@@ -8,6 +8,13 @@ function setLanguage(lang) {
         el.textContent = translations[lang][key] || key;
     });
 
+    document.querySelectorAll("[data-placeholder]").forEach(el => {
+        const key = el.getAttribute("data-placeholder");
+        if (translations[lang][key]) {
+            el.placeholder = translations[lang][key];
+        }
+    });
+
     sessionStorage.setItem("lang", lang);
     // console.log("Idioma guardado por el usuario:", lang);
 }
