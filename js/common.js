@@ -23,7 +23,7 @@ VERSION : 1.1
               App.owlTeam();
               App.owlTestimonial();
               App.navigate();
-              App.contactsubmit();
+              // App.contactsubmit();
              	
             },
          portfolio:function(){
@@ -99,37 +99,37 @@ VERSION : 1.1
     },
     
    
-   contactsubmit:function()
-   {
-       $('#contact-form').submit(function(e){
-		var form = $(this);
-		e.preventDefault();		
-		$.ajax({
-			type: 'POST',
-			url : 'php/sendmail.php',
-			data: form.serialize(),
-			success: function(data){
-				form.find('.form-message').html(data).fadeIn();
+  //  contactsubmit:function()
+  //  {
+  //      $('#contact-form').submit(function(e){
+	// 	var form = $(this);
+	// 	e.preventDefault();		
+	// 	$.ajax({
+	// 		type: 'POST',
+	// 		url : 'php/sendmail.php',
+	// 		data: form.serialize(),
+	// 		success: function(data){
+	// 			form.find('.form-message').html(data).fadeIn();
 		
-				form.find('.btn').prop('disabled', true);
+	// 			form.find('.btn').prop('disabled', true);
 					
-				if ($(data).is('.send-true')){
-					setTimeout(function(){
-						form.trigger('reset');
+	// 			if ($(data).is('.send-true')){
+	// 				setTimeout(function(){
+	// 					form.trigger('reset');
 						
-						form.find('.btn').prop('disabled', false);
+	// 					form.find('.btn').prop('disabled', false);
 						
-						form.find('.form-message').fadeOut().delay(500).queue(function(){
-							form.find('.form-message').html('').dequeue();
-						});
-					}, 2000);
-				} else {
-					form.find('.btn').prop('disabled', false);
-				}
-			}
-		});
-  });
-   },
+	// 					form.find('.form-message').fadeOut().delay(500).queue(function(){
+	// 						form.find('.form-message').html('').dequeue();
+	// 					});
+	// 				}, 2000);
+	// 			} else {
+	// 				form.find('.btn').prop('disabled', false);
+	// 			}
+	// 		}
+	// 	});
+  // });
+  //  },
    loader:function()
 			{
                          
