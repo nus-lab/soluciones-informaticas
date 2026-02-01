@@ -889,6 +889,12 @@ VERSION : 1.1
                 const lang = sessionStorage.getItem("lang") || "es";
                 setLanguage(lang);
 
+                if (type === 'frontend') {
+                    const url = 'https://niels-us.github.io/punto-de-venta/#/pos/pos';
+                    const text = categoryEl.textContent;
+                    categoryEl.innerHTML = `<a href="${url}" target="_blank" rel="noopener noreferrer">${text}</a>`;
+                }
+
                 $('#portfolioModal').modal('show');
             });
         });
